@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>It's about me</title>
+        <style>
+            .center {
+                margin: 10% auto auto;
+            }
+            body {
+                background-color: lightgray;
+            }
+        </style>
+        <script>
+            function klik() {
+                name = document.getElementById("name").value;
+                if (name == 'meylin' || name == 'einn' || name == 'Meylin' || name == 'Einn') {
+                    ask = confirm("Mau ga balik dari 0 ?")
+                    if (ask) {
+                        alert("Kirim screenshot ya sebagai bukti ^ ^")
+                        window.location = "https://wa.me/628980131347/";
+                    } else {
+                        alert("Mau kaan???")
+                        window.location = "https://wa.me/628980131347/";
+                    }
+                } else {
+                    alert("Maaf anda bukan orang yang dimaksud oleh owner")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="center">
+                <table>
+                    <tr>
+                        <td><p>Masukan Nama :</p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="klik()">Submit</button></td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+</html>
